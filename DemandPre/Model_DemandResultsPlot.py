@@ -57,7 +57,7 @@ def eg_series_uncertainty_plot():
     ax = series(x=x,
                 y=data["SSFM2_3"]["com_minweek3"].flatten(),
                 ax=ax,
-                linestyle=":",
+                linestyle="--",
                 color="tab:pink",
                 label="SSFM2(3)",
                 linewidth=2.15,

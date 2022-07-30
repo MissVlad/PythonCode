@@ -95,12 +95,12 @@ train_y = np.reshape(y_train,(729,24,Y_train.shape[1]))
 test_x = np.reshape(x_test,(365,24,X_test.shape[1]))
 
 #%%
-#build and fit the LSTM model
-#model = Sequential()
-#model.add(LSTM(50,input_shape=(24,22)))
-#model.add(Dense(24))
-#model.compile(loss='mean_squared_error',optimizer='adam')
-#model.fit(train_x,train_y,epochs=10,verbose=2)
+# build and fit the LSTM model
+model = Sequential()
+model.add(LSTM(50,input_shape=(24,22)))
+model.add(Dense(24))
+model.compile(loss='mean_squared_error',optimizer='adam')
+model.fit(train_x,train_y,epochs=10,verbose=2)
 #%%
 # predict in test set and train set
 model = tf.keras.models.load_model('elePriceForecast_net.h5')

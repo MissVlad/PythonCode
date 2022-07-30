@@ -8,6 +8,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Bidirectional, LSTM, Dense,Dropout
 from matplotlib import pyplot as plt
 from scipy.io import loadmat
+
 #%% 这一块看作知识展示，和此模型没有直接关系
 #eleMarketData = pd.read_excel("EleMarketData20170101to20211025.xlsx")
 #ele_datetime = pd.date_range('2017/1/1', periods=42216, freq='H')
